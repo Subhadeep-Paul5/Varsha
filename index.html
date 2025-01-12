@@ -19,38 +19,6 @@
         lucide.createIcons();
     });
 </script>
-  <style>
-        /* Parallax effect for mobile */
-        @media (max-width: 767px) {
-            .parallax {
-                background-attachment: fixed;
-                background-size: cover;
-                background-position: center;
-            }
-        }
-
-        /* Desktop view: Regular image */
-        @media (min-width: 768px) {
-            .image-desktop {
-                width: 50%;
-                height: 400px;
-                object-fit: cover;
-                margin: 0 auto;
-            }
-        }
-
-        /* Smooth scrolling */
-        html {
-            scroll-behavior: smooth;
-        }
-
-        /* Spacing for content */
-        .content {
-            padding: 1rem;
-            line-height: 1.8;
-        } 
-              </style>
-
 </head>
 
 <body class="bg-white text-black">
@@ -75,7 +43,7 @@
 
            <button id="nav-toggle" class="text-black focus:outline-none">
 
-             <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+             <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
 
                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
 
@@ -112,23 +80,8 @@
 
      </div>
 
-  </nav>
-  <!-- Desktop: Regular Image, Mobile: Parallax -->
-    <div class="h-screen md:h-auto md:flex md:justify-center md:items-center">
-        <!-- For mobile, show background image -->
-        <div class="h-screen parallax bg-cover bg-center relative md:hidden" style="background-image: url('Dentist.jpg');">
-    <!-- Text in the center -->
-    <div class="absolute inset-0 flex items-center justify-center text-center px-4">
-        <div class="bg-white bg-opacity-10 text-black border-2 border-black p-6 rounded-xl"> 
-            <h1 class="text-white text-4xl font-serif font-bold mb-4">Varsha K</h1>
-            <h2 class="text-white text-2xl font-mono semi-bold">Daily Brushing your teeth twice a day, keeps a Dentist away!</h2>
-        </div>
-    </div>
-        </div>
-    </div>
-
-       
-<main class="container flex flex-col items-center justify-center font-mono mx-auto px-6 pt-12 lg:pt-32 pb-12 min-h-screen">
+  </nav>      
+<main class="container flex flex-col items-center justify-center font-mono mx-auto px-6 pt-32 pb-12 min-h-screen">
     
      
 
@@ -151,7 +104,18 @@
        >
 
   </div>
+  <div class="w-full rounded-xl p-6 border-2 border-black relative overflow-hidden min-h-[200px]">
+            <div class="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-gray-400 to-blue-600 opacity-20"></div>              
 
+        <h2 class="text-1xl font-bold mb-4">
+          Daily Brushing your teeth twice a day, keeps a Dentist away!
+        </h2>
+  </div>
+  <h2 class="text-2xl font-bold mb-4">
+    ABOUT ME
+  </h2>
+          
+          
      <h4 class="text-1xl font-mono font-bold mb-6">
 
     I am <span class="font-extrabold">Varsha K</span>, a dedicated dental assistant with a deep passion for patient care. My first experience in a clinic was incredibly rewarding, as it taught me the importance of effective communication and truly understanding patients' needs. During this time, I developed the ability to identify concerns and work closely with the dental team to provide tailored solutions that ensure the best outcomes.
